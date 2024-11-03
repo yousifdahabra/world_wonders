@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./style/flex.css">
     <link rel="stylesheet" href="./style/home.css">
     <link rel="stylesheet" href="./style/fontawesome/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 <body class="main-background-color">
 
@@ -22,52 +24,9 @@
             </nav>
         </div>        
     </header>
-       
+    
 
-    <div class="wonders">
-
-        <div class="wonder">
-          <div class="img-wonder">
-            <img src="./assest/hero.jpg" alt="">
-            <div class="overlay">
-              <button class="view-details">View Details</button>
-            </div>
-          </div>
-          
-          <div class="info">
-            <h3>Great Pyramid of Giza</h3>
-            <p class="price">Giza, Egypt, Africa</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-          </div>
-        </div>
-      
-        <div class="wonder">
-          <div class="img-wonder">
-            <img src="./assest/hero.jpg" alt="">
-            <div class="overlay">
-              <button class="view-details">View Details</button>
-            </div>
-          </div>
-          <div class="info">
-            <h3>Laptop</h3>
-            <p class="price">Giza, Egypt, Africa</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-          </div>
-        </div>
-      
-        <div class="wonder">
-          <div class="img-wonder">
-            <img src="./assest/hero.jpg" alt="">
-            <div class="overlay">
-              <button class="view-details">View Details</button>
-            </div>
-          </div>
-          <div class="info">
-            <h3>Headphone</h3>
-            <p class="price">Giza, Egypt, Africa</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-          </div>
-        </div>
-      </div>
+    <div id="wonders" class="wonders"></div>
+    <script src="./js/axios.js"></script>
 </body>
 </html>
