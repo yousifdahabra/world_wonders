@@ -35,7 +35,7 @@ const fetch_user = async () =>{
     view_details.forEach((view_detail) => {
         view_detail.addEventListener("click", (event) => {
             const id = event.target.getAttribute('data-id');
-            console.log(JSON.parse(id))
+            localStorage.setItem('wonder', id);
         });
     });
 
