@@ -1,7 +1,7 @@
 
 const wonders = document.getElementById("wonders")
 
-const fetch_user = async () =>{
+const fetch_wonders = async () =>{
     console.log('async await')
 
     const wonders_data = await axios.get('https://www.world-wonders-api.org/v0/wonders');
@@ -24,7 +24,7 @@ const fetch_user = async () =>{
             
             <div class="info">
                 <h3>${wonder.name}</h3>
-                <p class="price">${wonder.location}</p>
+                <p class="city">${wonder.location}</p>
                 <p class="summary">${wonder.summary}</p>
             </div>
             </div>
@@ -36,8 +36,9 @@ const fetch_user = async () =>{
         view_detail.addEventListener("click", (event) => {
             const id = event.target.getAttribute('data-id');
             localStorage.setItem('wonder', id);
+            window.location.href = "pages/wonder.html"
         });
     });
 
 };
-fetch_user()
+fetch_wonders()

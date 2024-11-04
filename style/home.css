@@ -118,7 +118,7 @@
 	text-transform: uppercase;
 	font-family: 'Bebas Neue', sans-serif;
 }
-.info .price {
+.info .city {
 	margin: 0;
 	font-size: 17px;
 	font-weight: bold;
@@ -130,4 +130,19 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 300px;
+}
+
+
+.footer{
+    color: white;
+    position: relative;
+	height: 100%;
+	margin: 15px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+	transition: box-shadow 0.3s ease;
+	overflow: hidden;
+	background: #414852;
+	border-radius: 15px;
+	transition: all 0.8s ease-in-out;
+    text-align: center;
 }
